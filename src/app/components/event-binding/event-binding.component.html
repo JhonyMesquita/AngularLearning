@@ -1,0 +1,57 @@
+<h3>event-binding works!</h3>
+<section>
+<button mat-button color="primary">Save</button>
+<button mat-raised-button color="accent">{{ buttonName }}</button>
+</section>
+
+<section>
+  <button mat-raised-button color="primary" (click)="MatProgressSpinnerModule()" [disabled]="!btnEnable">Save</button>
+  <button mat-raised-button color="accent" [disabled]="!btnEnable">{{ buttonName }}</button>
+
+  <button mat-button color="warn" (click)="disable()">Disable</button>
+  <mat-progress-spinner
+    color="accent"
+    [mode]="spinnerMode"
+    [value]="spinnerValue"
+  ></mat-progress-spinner>
+  <h4>{{ spinnerValue }}%</h4>
+</section>
+
+<section>
+  <mat-card class="card">
+    <mat-card-content>
+      <p>
+      <mat-checkbox (change)="selectedDisable($event)"></mat-checkbox>
+      </p>
+      <mat-select color="warn" [disabled]="checkDisable" (selectionChange)="cbSelect($event)">
+        <mat-option value="1">Luffy</mat-option>
+        <mat-option value="2">Zoro</mat-option>
+        <mat-option value="3">Sanji</mat-option>
+        <mat-option value="4">Franky</mat-option>
+        <mat-option value="5">Brook</mat-option>
+      </mat-select>
+      <input type="button" name="selected" [value]="selectItens">
+    </mat-card-content>
+  </mat-card>
+</section>
+<mat-divider></mat-divider>
+<section>
+
+    <mat-card class="card">
+        <mat-card-content>
+
+          <mat-form-field MatFormFieldControl>
+              <input id="text" matInput placeholder="Text"
+                    (input)="inputEvent($event)">
+              <br>
+              <p>
+              <input matInput [value]="textInput">
+              </p>
+          </mat-form-field>
+        </mat-card-content>
+        <mat-card-actions>
+          Name: {{textInput}}
+        </mat-card-actions>
+    </mat-card>
+
+</section>
