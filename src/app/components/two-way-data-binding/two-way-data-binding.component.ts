@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TwoWayDataBindingComponent implements OnInit {
 
-  name1: string = '';
-  name2: string = '';
+  name1: string = 'data 01';
+  name2: string = 'data 02';
 
   client = {
     firstName: 'Nami',
