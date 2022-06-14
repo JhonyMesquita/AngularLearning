@@ -20,7 +20,10 @@ import { TwoWayDataBindingComponent } from './components/two-way-data-binding/tw
 import { FormsModule } from '@angular/forms';
 import { NgStyleComponent } from './components/ng-style/ng-style.component';
 import { NgClassComponent } from './components/ng-class/ng-class.component';
-
+import { NgIfComponent } from './components/ng-if/ng-if.component';
+import { SubNgIfComponent } from './components/ng-if/sub-ng-if/sub-ng-if.component';
+import { NgForComponent } from './components/ng-for/ng-for.component';
+import {MatListModule} from '@angular/material/list';
 
 
 @NgModule({
@@ -30,7 +33,10 @@ import { NgClassComponent } from './components/ng-class/ng-class.component';
     EventBindingComponent,
     TwoWayDataBindingComponent,
     NgStyleComponent,
-    NgClassComponent
+    NgClassComponent,
+    NgIfComponent,
+    SubNgIfComponent,
+    NgForComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +52,8 @@ import { NgClassComponent } from './components/ng-class/ng-class.component';
     MatInputModule,
     MatDividerModule,
     FormsModule,
-    MatRadioModule
+    MatRadioModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

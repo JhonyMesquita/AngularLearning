@@ -1,0 +1,15 @@
+<!-- <h4 *ngFor="let nakama of nakamas">{{ nakama }}</h4> -->
+<h4 *ngFor="let nakama of nakamas; let i=index">{{ i }}: {{ nakama }}</h4>
+
+<mat-card>
+  <mat-card-content>
+    <mat-list>
+      <mat-selection-list #selectedNakama>
+        <mat-list-option *ngFor="let nakama of nakamas">{{ nakama }}</mat-list-option>
+      </mat-selection-list>
+    </mat-list>
+  </mat-card-content>
+  <mat-card-footer>
+    <p>Quantidade selecionada: {{ selectedNakama.selectedOptions.selected.length }}</p>
+  </mat-card-footer>
+</mat-card>

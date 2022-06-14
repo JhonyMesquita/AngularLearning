@@ -1,0 +1,10 @@
+mat-card {
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 5px;
+}
+
+mat-card-footer{
+  padding: 20px;
+  margin: 10px;
+}
