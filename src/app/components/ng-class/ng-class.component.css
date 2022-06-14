@@ -1,0 +1,32 @@
+mat-card {
+  margin: 40px;
+}
+
+.result {
+  margin-left: 10%;
+}
+
+.myclasse1 {
+  font-size: 20px;
+  color: green;
+  display: flex;
+  background-color: orange;
+}
+.myclasse2 {
+  font-size: 30px;
+  color: blue;
+  display: flex;
+  background-color: yellow;
+}
+.myclasse3 {
+  font-size: 40px;
+  color: orange;
+  display: flex;
+  background-color: black;
+}
+.myclasse4 {
+  font-size: 50px;
+  color: red;
+  display: flex;
+  background-color: violet;
+}
