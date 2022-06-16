@@ -24,6 +24,7 @@ import { NgIfComponent } from './components/ng-if/ng-if.component';
 import { SubNgIfComponent } from './components/ng-if/sub-ng-if/sub-ng-if.component';
 import { NgForComponent } from './components/ng-for/ng-for.component';
 import {MatListModule} from '@angular/material/list';
+import { NgForFormComponent } from './components/ng-for-form/ng-for-form.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import {MatListModule} from '@angular/material/list';
     NgClassComponent,
     NgIfComponent,
     SubNgIfComponent,
-    NgForComponent
+    NgForComponent,
+    NgForFormComponent
   ],
   imports: [
     BrowserModule,

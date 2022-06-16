@@ -8,3 +8,7 @@ mat-card-footer{
   padding: 20px;
   margin: 10px;
 }
+
+.form-field {
+  width: 300px;
+}
