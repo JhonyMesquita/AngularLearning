@@ -23,7 +23,7 @@ export class NgForFormComponent implements OnInit {
       state: 'SP'
     },
   ]
-  client: Array<any> = [];
+  clients: Array<any> = [];
 
   constructor() { }
 
@@ -31,7 +31,7 @@ export class NgForFormComponent implements OnInit {
   }
 
   save() {
-    this.client.push(
+    this.clients.push(
       {
         name: this.name,
         address: this.address,
@@ -40,12 +40,13 @@ export class NgForFormComponent implements OnInit {
         age: this.age
       }
     )
-    console.log('Client', this.client);
+    console.log('Client', this.clients);
   }
 
   clickSave() {
     if(this.name !== '' && this.address !== '' && this.phone !== '' && this.city !== '' && this.age !== 0){
       this.save()
+      this.cancel()
     } else {
     alert('Obrigatórios')
       }
@@ -58,6 +59,12 @@ export class NgForFormComponent implements OnInit {
     this.city = '';
     this.age = 0;
 
+  }
+
+  delete(i: number) {
+    this.clients.splice(i, 1)
+
+    console.log('delete', i);
   }
 
 }
