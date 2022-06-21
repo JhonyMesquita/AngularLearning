@@ -12,18 +12,25 @@ export class NgForFormComponent implements OnInit {
   phone: string = '';
   age: number = 0;
   city: string = '';
+  clients: Array<any> = [];
   cities = [
-    { name: 'Rio',
+    { 
+      name: 'Rio',
       state: 'RJ'
     },
-    { name: 'Ceará',
+    { 
+      name: 'Ceará',
       state: 'CE'
     },
-    { name: 'São Paulo',
+    { 
+      name: 'São Paulo',
       state: 'SP'
     },
+    {
+      name: 'Minas Gerais',
+      state: 'MG'
+    }
   ]
-  clients: Array<any> = [];
 
   constructor() { }
 
